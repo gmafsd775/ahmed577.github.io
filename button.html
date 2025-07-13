@@ -1,0 +1,30 @@
+<a href="form.html" class="glow-button">🎟️ Get Your Invitation Pass</a>
+
+<style>
+.glow-button {
+  display: inline-block;
+  padding: 15px 40px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(135deg, #4D96FF, #8F00FF);
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 0 20px rgba(77, 150, 255, 0.6);
+  transition: all 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+.glow-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(143, 0, 255, 0.8);
+  background: linear-gradient(135deg, #8F00FF, #4D96FF);
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 15px rgba(77, 150, 255, 0.6); }
+  50% { box-shadow: 0 0 25px rgba(143, 0, 255, 0.8); }
+  100% { box-shadow: 0 0 15px rgba(77, 150, 255, 0.6); }
+}
+</style>
