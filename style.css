@@ -1,1 +1,17 @@
+.project-card {
+  background: #fff;
+  padding: 20px;
+  margin: 30px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 700px;
+  text-align: center;
+}
+.project-card h3 {
+  color: #4D96FF;
+}
+.project-card p {
+  font-size: 16px;
+  color: #555;
+}
 
