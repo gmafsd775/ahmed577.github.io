@@ -3,154 +3,102 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ahmed's Portfolio</title>
-  <meta name="description" content="Portfolio of Ahmed – showcasing Google Apps Script automation." />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <title>Ahmed's Automation Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
   <style>
     body {
       margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to right, #4D96FF, #6BCB77);
-      color: #fff;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #f4f6f9, #e3e6ee);
+      color: #333;
     }
     header {
       text-align: center;
-      padding: 40px 20px;
-      background: rgba(0, 0, 0, 0.2);
+      padding: 60px 20px 40px;
     }
     header h1 {
-      font-size: 2.5rem;
+      font-size: 36px;
       margin-bottom: 10px;
+      color: #4D96FF;
     }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      background: rgba(0, 0, 0, 0.3);
-      padding: 15px;
+    header p {
+      font-size: 18px;
+      color: #666;
     }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 600;
-      transition: color 0.3s ease;
-    }
-    nav a:hover {
-      color: #FFD93D;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      border-bottom: 2px solid #FFD93D;
+    .glow-button {
       display: inline-block;
+      padding: 15px 40px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #fff;
+      background: linear-gradient(135deg, #4D96FF, #8F00FF);
+      border: none;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 0 20px rgba(77, 150, 255, 0.6);
+      transition: all 0.3s ease;
+      animation: pulse 2s infinite;
+      margin-top: 25px;
     }
-    p, li {
-      font-size: 1.1rem;
-      line-height: 1.6;
+    .glow-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px rgba(143, 0, 255, 0.8);
+      background: linear-gradient(135deg, #8F00FF, #4D96FF);
     }
-    ul {
-      list-style: none;
-      padding: 0;
+    @keyframes pulse {
+      0% { box-shadow: 0 0 15px rgba(77, 150, 255, 0.6); }
+      50% { box-shadow: 0 0 25px rgba(143, 0, 255, 0.8); }
+      100% { box-shadow: 0 0 15px rgba(77, 150, 255, 0.6); }
     }
-    li {
-      background: rgba(255, 255, 255, 0.2);
-      margin: 10px 0;
-      padding: 10px;
-      border-radius: 8px;
-      transition: background 0.3s ease;
-    }
-    li:hover {
-      background: rgba(255, 255, 255, 0.4);
-    }
-    img {
-      width: 100%;
-      max-width: 600px;
-      border-radius: 10px;
-      margin: 20px auto;
-      display: block;
-    }
-    footer {
+
+    #projects {
+      max-width: 800px;
+      margin: 60px auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 30px;
       text-align: center;
-      padding: 20px;
-      background: rgba(0, 0, 0, 0.2);
-      font-size: 0.9rem;
     }
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-      nav {
-        flex-direction: column;
-        gap: 15px;
-      }
+    #projects h2 {
+      font-size: 28px;
+      color: #4D96FF;
+      margin-bottom: 20px;
+    }
+    .project-card {
+      margin-top: 20px;
+    }
+    .project-card h3 {
+      font-size: 20px;
+      color: #222;
+    }
+    .project-card p {
+      font-size: 16px;
+      color: #555;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Ahmed's Portfolio</h1>
-    <p>Automation Specialist | Google Apps Script | Chatbot Developer</p>
+    <h1>Ahmed’s Automation Portfolio</h1>
+    <p>Freelancing | Chatbots | Web Projects | Email Workflows</p>
+    <a href="form.html" class="glow-button">🎟️ Get Your Invitation Pass</a>
   </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I specialize in automating workflows using Google Apps Script, building chatbots with Chatbase, My goal is to help businesses save time and scale smarter.</p>
-    <img src="https://source.unsplash.com/600x400/?automation,technology" alt="Automation concept" />
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Google Apps Script (Email Automation, Triggers)</li>
-      <li>Chatbase Chatbot Deployment</li>
-    </ul>
-  </section>
-
   <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <section id="projects">
-  <h2>🚀 My Projects</h2>
-  <div class="project-card">
-    <h3>Google Form Integration</h3>
-    <p>This project shows how I embedded a Google Form into a live website using GitHub Pages.</p>
-    <a href="form.html" class="glow-button">View Project</a>
-  </div>
-</section>
-      <li><a href="https://developers.google.com/apps-script/quickstart/automation" target="_blank" style="color:#FFD93D;">Google Apps Script: Auto Email & Docs Generator</a></li>
-      <li><a href="https://chatbase.co/chatbot-iframe/YOUR_AGENT_ID" target="_blank" style="color:#FFD93D;">Chatbase Chatbot for Client FAQs</a></li>
-    </ul>
-    <img src="https://source.unsplash.com/600x400/?coding,workspace" alt="Coding workspace" />
+    <h2>🚀 My Projects</h2>
+
+    <div class="project-card">
+      <h3>📨 Google Forms + GitHub Integration</h3>
+      <p>Embedded a Google Form using iframe and showcased it with elegant layout and styling on GitHub Pages.</p>
+      <a href="form.html" class="glow-button">View Form</a>
+    </div>
+
+    <!-- More projects can be added here! -->
+
   </section>
-
-  <section id="contact">
-        <h2>Contact Me</h2>
-    <br>
-    <b><a href="form.html" class="glow-button">🎟️ Get Your Invitation Pass</a></b>
-    <br>
-    <p>Email: <a href="mailto:damha577@gmail.com" style="color:#FFD93D;">damha577@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/ahmed" target="_blank" style="color:#FFD93D;">linkedin.com/in/ahmed</a></p>
-  </section>
-
-  <!-- Chatbase Chatbot Embed -->
-  <script src="https://www.chatbase.co/embed.min.js" chatbotId="YOUR_AGENT_ID" domain="ahmed.github.io" defer></script>
-
-  <footer>
-    <p>© 2025 Ahmed. All rights reserved.</p>
-  </footer>
 
 </body>
 </html>
